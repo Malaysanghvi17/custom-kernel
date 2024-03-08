@@ -1,0 +1,12 @@
+/*
+*  link.ld
+*/
+ENTRY(entry)
+
+SECTIONS
+ {
+   . = 0x100000;
+   .text : { *(.text) }
+   .data : { *(.data) }
+   .bss  : { *(.bss)  }
+ }
